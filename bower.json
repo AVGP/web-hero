@@ -1,0 +1,12 @@
+{
+  "name": "Become a web hero",
+  "version": "0.0.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+    "codemirror": "3.13"
+  }
+}
