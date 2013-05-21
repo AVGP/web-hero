@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
-<html lang="en-us">
+<html lang="en-us" ng-app="hero">
     <head>
         <meta charset="utf-8">
-        <title>Hello...</title>
+        <title>Become a web hero!</title>
         <link rel="stylesheet" href="components/codemirror/lib/codemirror.css" />
         <link rel="stylesheet" href="components/codemirror/theme/ambiance.css" />
         <link rel="stylesheet" href="main.css" />
@@ -12,11 +12,11 @@
         <script src="components/codemirror/mode/javascript/javascript.js"></script>
         <script src="components/codemirror/mode/css/css.js"></script>
         <script src="components/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+        <script src="components/angular/angular.min.js"></script>
+        <script src="main.js"></script>
     </head>
     <body>
-        <div id="lesson" class="column">
-            Some lesson.
-        </div>
+        <div id="lesson" class="column" ng-view></div>
         <div id="editor" class="column">
             <textarea id="code">
 <!doctype html>
