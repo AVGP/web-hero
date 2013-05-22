@@ -8,7 +8,31 @@
     the head (that, in the editor to the right of this) contains <pre class="inline">&lt;script&gt;</pre> and <pre class="inline">&lt;style&gt;</pre> areas
     to take Javascript and CSS later on)
 </p>
-<p>Every element is wrapped in so-called <strong>tags</strong>.</p>
+<p>Every element is wrapped in so-called <strong>tags</strong>, which are easy to spot, thanks to the angle brackets (&lt; and &gt).</p>
+<p>
+    Tags surround their content and the ending (or <em>closing</em>) tag
+    has a slash in front of its name (e.g. <span class="inline">&lt;/h1&gt;</span>)
+</p>
+<p>Content can be text or other tags, so <em>nesting</em> can be done.</p>
+<p>As an example: You can have a headline that contains an image, or you may have a paragraph that contains a form that contains a button..</p>
+<p>
+    Some elements do not have content, for example a linebreak (<span class="inline">&lt;br /&gt;</span>)
+    and the slash of the closing tag is added right before the closing angle bracket of the tag.
+</p>
+<p>
+    Elements can also have <em>attributes</em> to describe their properties. For example links have somewhere to point to
+    (i.e. the website they take you to, when you click them). <br />
+    This is called the <em>href</em> (short for "hyper reference", can be any other document with an address, like another website or another HTML page of your website or an image, etc.).
+    To define a link, you would write:
+</p>
+<p><pre><code>
+&lt;a href="another_document.html"&gt;Go to another document&lt;a&gt;
+</code></pre></p>
+<p>Another example of an attribute is the <em>src</em> attribute for images which defines the image to display like this:</p>
+<pre><code>&lt;img src="some_picture.jpg" /&gt;</code></pre>
+
+<h2>What else is there?</h2>
+<p>HTML knows many different tags and attributes and to give a full explanation here would take too much time and space.</p>
 <p>
     There are plenty of reference guides on the different available tags,
     <a href="http://developers.whatwg.org/">see the HTML5 for developers reference as an example</a>.
@@ -65,4 +89,4 @@
     </code>
 </div>
 
-<p>Next up, <a href="#/the-orbit-2">Exploring the orbit a little more</a>.</p>
+<p>Next up, <a href="#/the-solar-system">The beauty of the solar system: CSS</a>.</p>
