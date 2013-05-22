@@ -1,3 +1,24 @@
+@keyframes expand {
+    from {
+        max-height: 1px;
+    }
+    
+    to {
+        max-height: 5000px;
+    }
+}
+
+@-webkit-keyframes expand {
+    from {
+        max-height: 1px;
+    }
+    
+    to {
+        max-height: 5000px;
+    }
+}
+
+
 html, body {
     position: relative;
     height: 100%;
@@ -13,6 +34,29 @@ html, body {
 .column {
     height: 100%;
     min-height: 100%;
-    width: 30%;
+    width: 32%;
+    padding-right: 1%;
     float: left;
+}
+
+.expandable, .expanded {
+    display: block;
+    border: 1px solid #ccf;
+    overflow: scroll;
+    min-height: 0;
+    max-height: auto;
+}
+
+.expandable {
+    height: 1px;
+}
+
+.expanded {
+    -webkit-animation: expand 3s;  
+    animation: expand 3s;
+}
+
+.inline {
+    display: inline-block;
+    background:#def;
 }
