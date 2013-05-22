@@ -18,6 +18,7 @@
     <body>
         <div id="lesson" class="column" ng-view></div>
         <div id="editor" class="column">
+        <div class="fixed">
             <textarea id="code">
 <!doctype html>
 <html>
@@ -35,8 +36,11 @@
     </body>
 </html>
             </textarea>
+            </div>
         </div>
-        <iframe id="preview" class="column"></iframe>
+        <div class="column">
+            <iframe id="preview" class="fixed"></iframe>
+        </div>
         <script> 
       var delay;
       // Initialize CodeMirror editor with a nice html5 canvas demo.
