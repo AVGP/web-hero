@@ -1,0 +1,73 @@
+<h2>The trinity of the web</h2>
+Every website is made of three things
+<ol>
+    <li><strong>HTML</strong> defines the content and its structure</li>
+    <li><strong>CSS</strong> defines how things look</li>
+    <li><strong>Javascript</strong> gives it interactivity, it defines behaviour.</li>
+</ol>
+<h2>HTML</h2>
+<p>HTML tells the browser what elements a website has and what content they keep.</p>
+<p>Examples are the headlines, the list above, these paragraphs.</p>
+<p>
+    It also contains non-visible parts of the structure like the body,
+    the head (that, in the editor to the right of this) contains <pre class="inline">&lt;script&gt;</pre> and <pre class="inline">&lt;style&gt;</pre> areas
+    to take Javascript and CSS later on)
+</p>
+<p>Every element is wrapped in so-called <strong>tags</strong>.</p>
+<p>
+    There are plenty of reference guides on the different available tags,
+    <a href="http://developers.whatwg.org/">see the HTML5 for developers reference as an example</a>.
+</p>
+
+<h2>Let's play with it!</h2>
+<p>With the help of a HTML5 reference, you should now be able to play around with the content.</p>
+<p>Try adding a second-level headline, a button, a link or an image.</p>
+
+<div class="expandbox">
+    <p>If you need some more inspiration, click the button below to see an example</p>
+    <button onclick="document.getElementById('example').className='expanded';">Show example</button>
+    <button onclick="editor.setValue(document.querySelector('#example textarea').value);">Copy to editor</button>
+    <code id="example" class="expandable">
+    <pre>&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;body&gt;
+  &lt;h1&gt;Hello World!&lt;/h1&gt;
+  &lt;h2&gt;Hello visitors!&lt;/h2&gt;
+  
+  &lt;img src="http://placekitten.com/200/300" 
+       width="200" height="300" 
+       alt="Some image showing a cat" /&gt;
+
+  &lt;p&gt;Some paragraph.&lt;/p&gt;
+  &lt;p&gt;And &lt;a href="http://www.google.com"&gt;a link to Google&lt;/a&gt;
+  
+  &lt;p&gt;
+    &lt;input id="something" /&gt;
+    &lt;button&gt;Click me!&lt;/button&gt;
+  &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+    <textarea style="display: none">
+<!doctype html>
+<html>
+  <body>
+  <h1>Hello World!</h1>
+  <h2>Hello visitors!</h2>
+  
+  <img src="http://placekitten.com/200/300" 
+       width="200" height="300" 
+       alt="Some image showing a cat" />
+
+  <p>Some paragraph.</p>
+  <p>And <a href="http://www.google.com">a link to Google</a>
+  
+  <p>
+    <input id="something" />
+    <button>Click me!</button>
+  </p>
+  </body>
+</html></textarea>
+    </code>
+</div>
+
+<p>Next up, <a href="#/tech-trinity-css">CSS to make things pretty</a>.</p>
