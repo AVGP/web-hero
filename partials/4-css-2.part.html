@@ -1,0 +1,75 @@
+<h2>Decorate the ship</h2>
+<h3>Selectors are powerful</h3>
+<p>
+    In the last chapter we changed all buttons.
+    But what if you want to change the background color of the self-destruct system button to red?
+    Or what, if you want to make the text on every critical button bold, but not on the non-critical buttons?
+</p>
+
+<p>First of all, we're gonna start with the following bit of HTML:</p>
+<pre><code>
+&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+      &lt;style&gt;
+      &lt;/style&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;h1&gt;The cockpit&lt;/h1&gt;
+    &lt;button&gt;Self destruct&lt;/button&gt;
+    &lt;button&gt;Emergency stop&lt;/button&gt;
+    &lt;button&gt;Fire lasers&lt;/button&gt;
+
+    &lt;button&gt;Autopilot&lt;/button&gt;
+    &lt;button&gt;Pretend to be busy&lt;/button&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+    <textarea style="display: none" id="base_code">
+<!doctype html>
+<html>
+  <head>
+      <style>
+      </style>
+  </head>
+  <body>
+    <h1>The cockpit</h1>
+    <button>Self destruct</button>
+    <button>Emergency stop</button>
+    <button>Fire lasers</button>
+
+    <button>Autopilot</button>
+    <button>Pretend to be busy</button>
+  </body>
+</html></textarea>
+<button onclick="editor.setValue(document.querySelector('#base_code').value);">Copy to editor</button>
+
+<p>
+    Now the most dangerous button is obviously the self destruct button, so we want to start with that one.
+    Let's begin with giving it an ID, like this:
+</p>
+<pre><code class="inline">&lt;button id="selfdestruct"&gt;Self destruct&lt;/button&gt;</code></pre>
+<p>
+    It doesn't matter what ID you use (I just used "selfdestruct", because it is obvious), 
+    as long as it's only used once on the page.
+</p>
+<p>Okay, now to the CSS: We want the self destruct to have bold text and a yellow background and a dashed, red border (put it between &lt;style&gt;...&lt;/style&gt;):</p>
+
+<pre><code>
+#selfdestruct {
+  background-color: yellow;
+  border: dashed red 2px;
+  font-weight: bold;
+}
+</code></pre>
+
+<p>
+    That's pretty simple - but where do these properties and their values come from? What are the available options?
+    The answer to that is: It's in the standard and, as with HTML, 
+    you can look these things up in <a href="http://dochub.io/#css/">a good CSS reference</a>.
+</p>
+
+<p class="aha">
+    You can select elements by their ID, by using "#" and the ID you want as the selector.
+</p>

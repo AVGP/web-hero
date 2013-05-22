@@ -1,2 +1,37 @@
-<h2>The beauty of the solar system</h2>
+<h2>The cockpit</h2>
 <h3>CSS - making things pretty</h3>
+
+<p>Now that we have built a stable home base in HTML, we want to explore the beauty of the solar system.</p>
+<p>Until now, things have been rather boring: Black on white, standard colors and fonts, nothing fancy.</p>
+<p>With CSS we can change that!</p>
+<p>
+    We have many possibilities ranging from colors, fonts and text size and the like to far more
+    elaborate techniques like shadows, 3D transformations and animations.
+</p>
+
+<h2>A small step for a man...</h2>
+<p>You may have noticed the <span class="inline">&lt;style&gt; ... &lt;/style&gt;</span> area in the editor.</p>
+<p>This is the place to put your CSS rules.</p>
+
+<p>CSS <strong>rules</strong> are describing the <em>appearance</em> of the elements.</p>
+<p>That means, that you can make things look different - you can even decide if something is displayed at all or if it's hidden.</p>
+
+<p class="aha">
+    CSS rules are made of two things: <strong>selectors</strong> and <strong>property-value assignments</strong>.
+    Imagine you're telling somebody to make things look a certain way.
+</p>
+<p>You may say something like:</p>
+<blockquote>
+    "I want all buttons to have blue text."
+</blockquote>
+<p>This pretty much translates directly into CSS:</p>
+<pre><code>
+button {
+  color: blue;     
+}
+</code></pre>
+<p>Try that in the editor and see the effects.</p>
+<p class="aha">The "button" part is the selector ("all button elements"), the part in <span style="inline">{...}</span> contains the property-value assignments.</p>
+<p>In the example we only set one property - the color, which is the text color of the element that match the selector - to a value (blue).</p>
+
+<p>Now let's decorate our space ship by <a href="#/decorate-our-ship">using the power of CSS selectors</a></p>
