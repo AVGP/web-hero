@@ -3,7 +3,8 @@ angular.module("hero", []).config(function($routeProvider) {
     .when('/your-ship', { templateUrl: 'partials/1-your-ship.part.html' })
     .when('/space-topography', { templateUrl: 'partials/2-space-topography.part.html' })
     .when('/the-orbit', { templateUrl: 'partials/3-html-1.part.html' })
-    .when('/the-solar-system', { templateUrl: 'partials/4-css-1.part.html' })
+    .when('/the-cockpit', { templateUrl: 'partials/4-css-1.part.html' })
+    .when('/decorate-our-ship', { templateUrl: 'partials/4-css-2.part.html' })
     .otherwise({
         templateUrl: 'partials/start.part.html'
     });
